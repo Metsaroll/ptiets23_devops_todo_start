@@ -2,12 +2,14 @@
   "name": "todo-with-github-actions-and-jest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://metsaroll.github.io/ptiets23_devops_todo_start"
+  "homepage": "https://metsaroll.github.io/ptiets23_devops_todo_start",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d deploy"
   },
   "browserslist": {
     "production": [
